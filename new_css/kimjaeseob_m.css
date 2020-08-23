@@ -7,19 +7,52 @@
  #subTopWrap.noneType {height:112px;}
  #subTopWrap.noneType .subTopArea {border-bottom:0;}
 
+.moInner {padding:0 30px;}
+.moInner + .btnGroup {margin-top:50px;}
+
+.tblEle {display:table; width:100%;}
+.tblEle > .ele {display:table-cell; vertical-align:middle;}
+.tblEle > .ele.mini {text-align:right; width:10px; padding-left:10px; white-space:nowrap;}
+.tblEle > .ele .inpAlertMsg {padding-top:0;}
 
 .dotList {}
-.dotList > li {position:relative; padding-left:10px; font-size:22px; line-height:30px; color:#767676;}
-.dotList > li:before {content:''; position:absolute; top:12px; left:0; width:3px; border-bottom:3px solid #767676; border-radius:50%;}
+.dotList > li {position:relative; padding-left:10px; font-size:22px; line-height:30px; color:#767676; text-align:left;}
+.dotList > li:before {content:''; position:absolute; top:13px; left:0; width:3px; border-bottom:3px solid #767676; border-radius:50%;}
 
+.inpAlertMsg {position:relative; margin-top:14px; padding-left:10px; font-size:22px; line-height:30px; color:#767676;}
+.inpAlertMsg:before {content:''; position:absolute; top:12px; left:0; width:3px; border-bottom:3px solid #767676; border-radius:50%;}
+.inpAlertMsg + .inpAlertMsg {margin-top:0;}
 
 .contBoxType1 {margin:0 30px; padding:30px 20px; font-size:24px; line-height:30px; color:#767676; background:#f7f7f7;}
 .contBoxType1 + .btnGroupMoTy1 {margin-top:60px;}
 
-
 .btnGroupMoTy1 {text-align:center; padding:0 30px; font-size:0;}
 .btnGroupMoTy1 .btnType1 {width:calc(50% - 10px); padding:0;}
 .btnGroupMoTy1 .btnType1 + .btnType1 {margin-left:20px;}
+
+.infoTxtEle {text-align:left;}
+.infoTxtEle.etc {margin-top:10px; padding-top:30px; padding:30px 0 35px 0; border-top:1px solid #e2e2e4; border-bottom:1px solid #e2e2e4;}
+.infoTxtEle > dt {font-weight:500; font-size:32px; color:#222;}
+.infoTxtEle > dd {padding-top:24px; font-size:14px; color:#767676;}
+
+
+
+/* 이메일 입력 항목 */
+.emailInput {font-size:0;}
+.emailInput > .ele {display:inline-block; width:calc(50% - 23px);}
+.emailInput > .ele.ty1 {width:46px; font-size:28px; color:#4e4f51; text-align:center; vertical-align:middle;}
+.emailInput > .ele.ty2 {display:block; width:100%; padding-top:20px;}
+.emailInput > .ele input[type="text"],
+.emailInput > .ele .selectBox  {width:100%;}
+
+/* 전화번호 입력 항목 */
+.phoneInput {display:flex;}
+.phoneInput > .ele {flex:1;}
+.phoneInput > .ele.ty1 {flex:none; width:160px;}
+.phoneInput > .ele.ty2 {flex:none; width:32px; text-align:center; line-height:70px;}
+.phoneInput > .ele.ty3 {width:140px; width:calc(100% - 160);}
+.phoneInput > .ele input[type="text"],
+.phoneInput > .ele .selectBox  {width:100%;}
 
 
 
@@ -47,6 +80,28 @@
 .singUpLink {display:inline-block; width:100%; padding-top:130px; font-weight:500; font-size:28px; color:#292a2d; background-repeat:no-repeat;}
 .singUpLink.ty1 {background-image:url(../new_images/common/iconCertPhone.png); background-position:center top;}
 .singUpLink.ty2 {background-image:url(../new_images/common/iconCertPin.png); background-position:center top;}
+
+
+
+
+
+
+/* 회원가입 - 회원정보입력 */
+.signUpForm {border-top:2px solid #5b648a; text-align:center;}
+.signUpForm > .inner {display:inline-block; padding:30px 0;}
+.signUpFormList > li {text-align:left;}
+.signUpFormList > li + li {margin-top:40px; padding-top:30px; border-top:1px solid #e2e2e4;}
+.signUpFormList > li .tit {padding-bottom:25px;}
+.signUpFormList > li .tit label {font-weight:500; font-size:32px; color:#292a2d;}
+.signUpFormList > li .inpArea {padding-top:8px;}
+.signUpFormList > li .inpArea input[type="text"], 
+.signUpFormList > li .inpArea input[type="password"] {width:100%;}
+.signUpForm + .btnGroup {margin-top:60px;}
+
+
+
+
+
 
 
 

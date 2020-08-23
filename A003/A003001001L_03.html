@@ -22,6 +22,10 @@
 
     <link href="../new_css/kimjaeseob.css" rel="stylesheet" />
 
+    <!-- <link href="../new_css/layout_m.css" rel="stylesheet" />
+	<link href="../new_css/contents_m.css" rel="stylesheet" />
+	<link href="../new_css/kimjaeseob_m.css" rel="stylesheet" /> -->
+
     <script src="../new_js/lib/jquery-2.1.1.js"></script>
     <script src="../new_js/lib/swiper.min.js"></script>
     <script src="../new_js/ui.js"></script>
@@ -315,179 +319,197 @@
                                     <li><em class="stepCount">4</em><span class="txt">가입완료</span></li>
                                 </ol>
                             </div>
-                            <div class="tableArea">
-                                <div class="tableTitleArea">
-                                    <h4 class="tableTitle">정보입력</h4>
-                                    <div class="tableComment">"<span class="color01">＊</span>" 필수 사항 입니다.</div>
-                                </div>
-                            </div>
-                            <div class="signUpForm">
-                                <div class="inner">
-                                    <ul class="signUpFormList">
-                                        <li>
-                                            <div class="tit">
-                                                <label for="forId">아이디 <span class="color01">＊</span></label>
-                                            </div>
-                                            <div class="inpArea bntAddInp">
-                                                <div class="bntAddInpCont">
-                                                    <input type="text" maxlength="24" placeholder="아이디를 입력해 주세요" name="loginName" id="forId">
-                                                </div>
-                                                <div class="bntAddInpCont">
-                                                    <button type="button" class="uiBtn">중복확인</button>
-                                                </div>
-                                            </div>
-                                            <p class="inpAlertMsg">아이디 입력시 영문(소/대문자 구분)과 숫자를 조합하여 6~24자 이내로 입력하세요</p>
-                                        </li>
-                                        <li>
-                                            <div class="tit">
-                                                <label for="forPassword">비밀번호 <span class="color01">＊</span></label>
-                                            </div>
-                                            <div class="inpArea">
-                                                <input type="password" maxlength="24" placeholder="비밀번호를 입력해 주세요" name="loginName" id="forPassword">
-                                            </div>
-                                            <div class="tblEle">
-                                                <div class="ele">
-                                                    <p class="inpAlertMsg">특수문자, 영문(대/소문자), 숫자 3가지를 조합하여 8~24자 이내로 입력하시기 바랍니다. 특수 문자중: ^,-,[,],’,-,&lt;,&gt;은 사용하실수 없습니다.</p>
-                                                </div>
-                                                <div class="ele mini">
-                                                    <button type="button" class="btnH30">도움말</button>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="tit">
-                                                <label for="forPasswordRe">비밀번호 재확인 <span class="color01">＊</span></label>
-                                            </div>
-                                            <div class="inpArea">
-                                                <input type="password" maxlength="24" placeholder="비밀번호를 재확인 해주세요" name="loginName" id="forPasswordRe">
-                                            </div>
-                                            <p class="inpAlertMsg">비밀번호를 다시 한번 더 입력해주세요.</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
 
-                            <div class="tableArea">
-                                <div class="tableTitleArea">
-                                    <h4 class="tableTitle">가입정보</h4>
-                                    <div class="tableComment">"<span class="color01">＊</span>" 필수 사항 입니다.</div>
+                            <div class="moInner">
+                                <div class="tableArea">
+                                    <div class="tableTitleArea">
+                                        <h4 class="tableTitle">정보입력</h4>
+                                        <div class="tableComment">"<span class="color01">＊</span>" 필수 사항 입니다.</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="signUpForm">
-                                <div class="inner">
-                                    <ul class="signUpFormList">
-                                        <li>
-                                            <div class="tit">
-                                                <label for="forName">성명 <span class="color01">＊</span></label>
-                                            </div>
-                                            <div class="inpArea">
-                                                <input type="text" maxlength="24" placeholder="이름을 입력해주세요" name="loginName" id="forName">
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="tit">
-                                                <label for="userEmail01">이메일 (E-mail) <span class="color01">＊</span></label>
-                                            </div>
-                                            <div class="inpArea emailInput">
-                                                <div class="ele">
-                                                    <input type="text" title="이메일 주소를 입력하세요" name="userEmail01" id="userEmail01">
+                                <div class="signUpForm">
+                                    <div class="inner">
+                                        <ul class="signUpFormList">
+                                            <li>
+                                                <div class="tit">
+                                                    <label for="forId">아이디 <span class="color01">＊</span></label>
                                                 </div>
-                                                <div class="ele ty1">@</div>
-                                                <div class="ele">
-                                                    <input type="text" title="이메일 서버주소를 입력하세요" name="userEmail02" id="userEmail02">
+                                                <div class="inpArea tblEle">
+                                                    <div class="ele">
+                                                        <input type="text" maxlength="24" placeholder="아이디를 입력해 주세요" name="loginName" id="forId">
+                                                    </div>
+                                                    <div class="ele mini">
+                                                        <button type="button" class="uiBtn verPC">중복확인</button>
+                                                        <button type="button" class="btnType2 verM">중복확인</button>
+                                                    </div>
                                                 </div>
-                                                <div class="ele ty2">
-                                                    <select title="이메일 도메인" name="userEmail03" id="userEmail03" class="selectBox">
-                                                        <option selected="selected" value="">직접입력</option>
-                                                        <option value="chol.com"> chol.com </option>
-                                                        <option value="dreamwiz.com"> dreamwiz.com </option>
-                                                        <option value="empal.com"> empal.com </option>
-                                                        <option value="freechal.com"> freechal.com </option>
-                                                        <option value="gmail.com"> gmail.com </option>
-                                                        <option value="hanmail.net"> hanmail.net </option>
-                                                        <option value="hanmir.net"> hanmir.net </option>
-                                                        <option value="hitel.com"> hitel.com </option>
-                                                        <option value="hotmail.com"> hotmail.com </option>
-                                                        <option value="korea.com"> korea.com </option>
-                                                        <option value="nate.com"> nate.com </option>
-                                                        <option value="naver.com"> naver.com </option>
-                                                        <option value="orgio.com"> orgio.com </option>
-                                                        <option value="paran.com"> paran.com </option>
-                                                        <option value="sayclub.net"> sayclub.net </option>
-                                                        <option value="shinbiro.com"> shinbiro.com </option>
-                                                        <option value="yahoo.co.kr"> yahoo.co.kr </option>
-                                                        <option value="yahoo.com"> yahoo.com </option>
-                                                        <option value="molab.go.kr"> molab.go.kr </option>
-                                                    </select>
+                                                <p class="inpAlertMsg">아이디 입력시 영문(소/대문자 구분)과 숫자를 조합하여 6~24자 이내로 입력하세요</p>
+                                            </li>
+                                            <li>
+                                                <div class="tit">
+                                                    <label for="forPassword">비밀번호 <span class="color01">＊</span></label>
                                                 </div>
-                                            </div>
-                                            <p class="inpAlertMsg">일부(gmail,yahoo 등) 메일계정 사용시 해당사의 보안정책 등에 의하여 메일 관련서비스 수신이 되지 않을 수 있으니 다른 메일계정을 사용해 주세요.</p>
-                                        </li>
-                                        <li>
-                                            <div class="tit">
-                                                <label for="userTel01">전화번호 <span class="color01">＊</span></label>
-                                            </div>
-                                            <div class="inpArea phoneInput">
-                                                <div class="ele ty1">
-                                                    <select title="전화 번호 앞자리 선택" name="userTel01" id="userTel01" class="selectBox">
-                                                        <option selected="selected" value="">선택</option>
-                                                        <option value="032"> 032 </option>
-                                                    </select>
+                                                <div class="inpArea">
+                                                    <input type="password" maxlength="24" placeholder="비밀번호를 입력해 주세요" name="loginName" id="forPassword">
                                                 </div>
-                                                <div class="ele ty2">-</div>
-                                                <div class="ele ty3">
-                                                    <input type="text" title="전화번호 가운데 자리" name="userTel02" id="userTel02">
+                                                <div class="tblEle">
+                                                    <div class="ele">
+                                                        <p class="inpAlertMsg">특수문자, 영문(대/소문자), 숫자 3가지를 조합하여 8~24자 이내로 입력하시기 바랍니다.</p>
+                                                        <p class="inpAlertMsg">특수 문자중: ^,-,[,],’,-,&lt;,&gt;은 사용하실수 없습니다.</p>
+                                                    </div>
+                                                    <div class="ele mini verPC">
+                                                        <button type="button" class="btnH30">도움말</button>
+                                                    </div>
                                                 </div>
-                                                <div class="ele ty2">-</div>
-                                                <div class="ele ty3">
-                                                    <input type="text" title="전화번호 끝 자리" name="userTel03" id="userTel03">
+                                            </li>
+                                            <li>
+                                                <div class="tit">
+                                                    <label for="forPasswordRe">비밀번호 재확인 <span class="color01">＊</span></label>
                                                 </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="tit">
-                                                <label for="userHP01">휴대폰 번호 <span class="color01">＊</span></label>
-                                            </div>
-                                            <div class="inpArea">
-                                                <div class="phoneInput">
+                                                <div class="inpArea">
+                                                    <input type="password" maxlength="24" placeholder="비밀번호를 재확인 해주세요" name="loginName" id="forPasswordRe">
+                                                </div>
+                                                <p class="inpAlertMsg">비밀번호를 다시 한번 더 입력해주세요.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="tableArea">
+                                    <div class="tableTitleArea">
+                                        <h4 class="tableTitle">가입정보</h4>
+                                        <div class="tableComment">"<span class="color01">＊</span>" 필수 사항 입니다.</div>
+                                    </div>
+                                </div>
+                                <div class="signUpForm">
+                                    <div class="inner">
+                                        <ul class="signUpFormList">
+                                            <li>
+                                                <div class="tit">
+                                                    <label for="forName">성명 <span class="color01">＊</span></label>
+                                                </div>
+                                                <div class="inpArea">
+                                                    <input type="text" maxlength="24" placeholder="이름을 입력해주세요" name="loginName" id="forName">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="tit">
+                                                    <label for="userEmail01">이메일 (E-mail) <span class="color01">＊</span></label>
+                                                </div>
+                                                <div class="inpArea emailInput">
+                                                    <div class="ele">
+                                                        <input type="text" title="이메일 주소를 입력하세요" name="userEmail01" id="userEmail01">
+                                                    </div>
+                                                    <div class="ele ty1">@</div>
+                                                    <div class="ele">
+                                                        <input type="text" title="이메일 서버주소를 입력하세요" name="userEmail02" id="userEmail02">
+                                                    </div>
+                                                    <div class="ele ty2">
+                                                        <select title="이메일 도메인" name="userEmail03" id="userEmail03" class="selectBox">
+                                                            <option selected="selected" value="">직접입력</option>
+                                                            <option value="chol.com"> chol.com </option>
+                                                            <option value="dreamwiz.com"> dreamwiz.com </option>
+                                                            <option value="empal.com"> empal.com </option>
+                                                            <option value="freechal.com"> freechal.com </option>
+                                                            <option value="gmail.com"> gmail.com </option>
+                                                            <option value="hanmail.net"> hanmail.net </option>
+                                                            <option value="hanmir.net"> hanmir.net </option>
+                                                            <option value="hitel.com"> hitel.com </option>
+                                                            <option value="hotmail.com"> hotmail.com </option>
+                                                            <option value="korea.com"> korea.com </option>
+                                                            <option value="nate.com"> nate.com </option>
+                                                            <option value="naver.com"> naver.com </option>
+                                                            <option value="orgio.com"> orgio.com </option>
+                                                            <option value="paran.com"> paran.com </option>
+                                                            <option value="sayclub.net"> sayclub.net </option>
+                                                            <option value="shinbiro.com"> shinbiro.com </option>
+                                                            <option value="yahoo.co.kr"> yahoo.co.kr </option>
+                                                            <option value="yahoo.com"> yahoo.com </option>
+                                                            <option value="molab.go.kr"> molab.go.kr </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <p class="inpAlertMsg">일부(gmail,yahoo 등) 메일계정 사용시 해당사의 보안정책 등에 의하여 메일 관련서비스 수신이 되지 않을 수 있으니 다른 메일계정을 사용해 주세요.</p>
+                                            </li>
+                                            <li>
+                                                <div class="tit">
+                                                    <label for="userTel01">전화번호 <span class="color01">＊</span></label>
+                                                </div>
+                                                <div class="inpArea phoneInput">
                                                     <div class="ele ty1">
-                                                        <select title="핸드폰 번호 앞자리 선택" name="userHP01" id="userHP01" class="selectBox">
+                                                        <select title="전화 번호 앞자리 선택" name="userTel01" id="userTel01" class="selectBox">
                                                             <option selected="selected" value="">선택</option>
-                                                            <option value="010"> 010 </option>
+                                                            <option value="032"> 032 </option>
                                                         </select>
                                                     </div>
                                                     <div class="ele ty2">-</div>
                                                     <div class="ele ty3">
-                                                        <input type="text" title="핸드폰 가운데 자리" name="userHP02" id="userHP02">
+                                                        <input type="text" title="전화번호 가운데 자리" name="userTel02" id="userTel02">
                                                     </div>
                                                     <div class="ele ty2">-</div>
                                                     <div class="ele ty3">
-                                                        <input type="text" title="핸드폰 끝 자리" name="userHP03" id="userHP03">
+                                                        <input type="text" title="전화번호 끝 자리" name="userTel03" id="userTel03">
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                            </li>
+                                            <li>
+                                                <div class="tit">
+                                                    <label for="userHP01">휴대폰 번호 <span class="color01">＊</span></label>
+                                                </div>
+                                                <div class="inpArea">
+                                                    <div class="phoneInput">
+                                                        <div class="ele ty1">
+                                                            <select title="핸드폰 번호 앞자리 선택" name="userHP01" id="userHP01" class="selectBox">
+                                                                <option selected="selected" value="">선택</option>
+                                                                <option value="010"> 010 </option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="ele ty2">-</div>
+                                                        <div class="ele ty3">
+                                                            <input type="text" title="핸드폰 가운데 자리" name="userHP02" id="userHP02">
+                                                        </div>
+                                                        <div class="ele ty2">-</div>
+                                                        <div class="ele ty3">
+                                                            <input type="text" title="핸드폰 끝 자리" name="userHP03" id="userHP03">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="tableArea">
-                                <div class="tableTitleArea">
-                                    <h4 class="tableTitle">공인인증서</h4>
+                                <div class="tableArea verPC">
+                                    <div class="tableTitleArea">
+                                        <h4 class="tableTitle">공인인증서</h4>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="signUpForm">
-                                <dl class="infoTxtEle">
-                                    <dt>공인인증서를 사용방법을 확인하세요.</dt>
+                                <div class="signUpForm verPC">
+                                    <dl class="infoTxtEle">
+                                        <dt>공인인증서를 사용방법을 확인하세요.</dt>
+                                        <dd>
+                                            HRD-Net 회원가입 후 화면상단 “공인인증서 관리” 메뉴에서 등록/변경 하실 수 있습니다.<br>
+											개인회원 아이디는 개인 “공인 인증서“ 만 이용이 가능합니다.<br>
+											대리인으로 활동하신 개인회원의 경우 공인인증서 등록이 필요합니다.
+                                        </dd>
+                                    </dl>
+                                </div>
+
+                                <dl class="infoTxtEle etc verM">
+                                    <dt>공인인증서</dt>
                                     <dd>
-                                        HRD-Net 회원가입 후 화면상단 “공인인증서 관리” 메뉴에서 등록/변경 하실 수 있습니다.<br>
-										개인회원 아이디는 개인 “공인 인증서“ 만 이용이 가능합니다.<br>
-										대리인으로 활동하신 개인회원의 경우 공인인증서 등록이 필요합니다.
+                                        <ul class="dotList">
+                                            <li>공인인증서를 사용방법을 확인하세요.</li>
+                                            <li>HRD-Net 회원가입 후 화면상단 “공인인증서 관리” 메뉴에서 등록/변경 하실 수 있습니다.</li>
+                                            <li>개인회원 아이디는 개인 “공인 인증서“ 만 이용이 가능합니다.</li>
+                                            <li>대리인으로 활동하신 개인회원의 경우 공인인증서 등록이 필요합니다.</li>
+                                        </ul>
                                     </dd>
                                 </dl>
+
                             </div>
 
-                            <div class="btnGroup">
+                            <div class="btnGroup btnGroupMoTy1">
                                 <button type="button" class="btnType1">취소</button>
                                 <button type="button" class="btnType1 primary">작성완료</button>
                             </div>
