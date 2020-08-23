@@ -442,6 +442,28 @@
                         <button type="button" class="btnType1 primary">확인</button>
                     </div>
 
+
+                    <script>
+                        $(function() {
+                            $('.popactive').click(function() {
+                                var data = $(this).data('popactive');
+                                $('body').css('position', 'fixed');
+                                $('body').css('height', '100%');
+                                $('.layerfullWrap').css('display', 'none');
+                                $('[data-fullpop="' + data + '"]').css('display', 'block');
+                            });
+
+                            $('.layerCloseBtn').click(function() {
+                                $('body').removeAttr('style');
+                                $(this).closest('.layerfullWrap').css('display', 'none');
+                            });
+
+
+
+                        });
+                    </script>
+
+
                     <div class="moInner verM">
                         <div class="termsDiv">
                             <div class="contTitEle verM">
@@ -457,7 +479,7 @@
                                             </div>
                                         </div>
                                         <div class="ele mini">
-                                            <button type="button" class="btnType2 primary small">전문보기</button>
+                                            <button type="button" class="btnType2 primary small popactive" data-popactive="fullpop01">전문보기</button>
                                         </div>
                                     </div>
                                 </li>
@@ -470,7 +492,7 @@
                                             </div>
                                         </div>
                                         <div class="ele mini">
-                                            <button type="button" class="btnType2 primary small">전문보기</button>
+                                            <button type="button" class="btnType2 primary small popactive" data-popactive="fullpop02">전문보기</button>
                                         </div>
                                     </div>
                                 </li>
@@ -483,7 +505,7 @@
                                             </div>
                                         </div>
                                         <div class="ele mini">
-                                            <button type="button" class="btnType2 primary small">전문보기</button>
+                                            <button type="button" class="btnType2 primary small popactive" data-popactive="fullpop03">전문보기</button>
                                         </div>
                                     </div>
                                 </li>
@@ -496,7 +518,7 @@
                                             </div>
                                         </div>
                                         <div class="ele mini">
-                                            <button type="button" class="btnType2 primary small">전문보기</button>
+                                            <button type="button" class="btnType2 primary small popactive" data-popactive="fullpop04">전문보기</button>
                                         </div>
                                     </div>
                                 </li>
@@ -518,7 +540,7 @@
                                             </div>
                                         </div>
                                         <div class="ele mini">
-                                            <button type="button" class="btnType2 primary small">전문보기</button>
+                                            <button type="button" class="btnType2 primary small popactive" data-popactive="fullpop05">전문보기</button>
                                         </div>
                                     </div>
                                 </li>
@@ -622,11 +644,21 @@
         <section class="layerContent">
             <div class="layerInner">
                 <ul class="agrCont">
-                    <li class="ty1">
-                        <span class="num">1</span> 가. HRD-Net(www.hrd.go.kr, m.hrd.go.kr) 신규가입자 약관(이하 "본 약관" 이라 합니다.)은 회원이 한국 고용정보원에서 제공하는 인터넷 관련 서비스(이하 "서비스"라 합니다.)를 이용함에 있어 이용 조건, 절차, 회원 및 한국고용정보원의 권리, 의무, 책임 및 기타 필요한 제반사항 등을 규정함을 그 목적으로 합니다.
+                    <li>
+                        <div class="tblEle vtType">
+                            <div class="ele">1</div>
+                            <div class="ele pl15">
+                                가. HRD-Net(www.hrd.go.kr, m.hrd.go.kr) 신규가입자 약관(이하 "본 약관" 이라 합니다.)은 회원이 한국 고용정보원에서 제공하는 인터넷 관련 서비스(이하 "서비스"라 합니다.)를 이용함에 있어 이용 조건, 절차, 회원 및 한국고용정보원의 권리, 의무, 책임 및 기타 필요한 제반사항 등을 규정함을 그 목적으로 합니다.
+                            </div>
+                        </div>
                     </li>
-                    <li class="ty1">
-                        <span class="num">2</span> 나. 회원이 되고자 하는 자가 한국고용정보원이 정한 소정의 절차를 거쳐서 "동의"단추를 누르면 본 약관에 동의하는 것으로 간주합니다. 본 약관에 정하는 내용 이외의 회원과 한국고용정보원의 권리, 의무 및 책임사항에 관해서는 전기통신사업법 및 기타 대한민국의 관련 법령과 상관습에 의합니다.
+                    <li>
+                        <div class="tblEle vtType">
+                            <div class="ele">2</div>
+                            <div class="ele pl15">
+                                나. 회원이 되고자 하는 자가 한국고용정보원이 정한 소정의 절차를 거쳐서 "동의"단추를 누르면 본 약관에 동의하는 것으로 간주합니다. 본 약관에 정하는 내용 이외의 회원과 한국고용정보원의 권리, 의무 및 책임사항에 관해서는 전기통신사업법 및 기타 대한민국의 관련 법령과 상관습에 의합니다.
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -635,11 +667,12 @@
     </div>
     <!--// HRD-Net 이용약관 -->
 
-    <div class="layerfullWrap" data-fullpop="fullpop01" style="display:none">
+    <!-- 개인정보 수집 및 이용약관 -->
+    <div class="layerfullWrap" data-fullpop="fullpop02" style="display:none">
         <!-- 헤더영역 -->
         <div class="layerHeader">
             <div class="layerTitle">
-                <div class="inner">HRD-Net 이용약관</div>
+                <div class="inner">개인정보 수집 및 이용약관</div>
             </div>
             <button type="button" class="layerCloseBtn">닫기</button>
         </div>
@@ -649,113 +682,145 @@
         <section class="layerContent">
             <div class="layerInner">
                 <ul class="agrCont">
-                    <li class="ty1">
-                        <span class="num">1</span> 가. HRD-Net(www.hrd.go.kr, m.hrd.go.kr) 신규가입자 약관(이하 "본 약관" 이라 합니다.)은 회원이 한국 고용정보원에서 제공하는 인터넷 관련 서비스(이하 "서비스"라 합니다.)를 이용함에 있어 이용 조건, 절차, 회원 및 한국고용정보원의 권리, 의무, 책임 및 기타 필요한 제반사항 등을 규정함을 그 목적으로 합니다.
+                    <li>
+                        <div class="tblEle vtType">
+                            <div class="ele"><strong class="tit">1.</strong></div>
+                            <div class="ele pl15">
+                                <strong class="tit">수집ㆍ이용목적</strong><br>
+							HRD-Net 서비스 회원가입, 원활한 고객상담, 각종 직업훈련 서비스 제공
+                            </div>
+                        </div>
                     </li>
-                    <li class="ty1">
-                        <span class="num">2</span> 나. 회원이 되고자 하는 자가 한국고용정보원이 정한 소정의 절차를 거쳐서 "동의"단추를 누르면 본 약관에 동의하는 것으로 간주합니다. 본 약관에 정하는 내용 이외의 회원과 한국고용정보원의 권리, 의무 및 책임사항에 관해서는 전기통신사업법 및 기타 대한민국의 관련 법령과 상관습에 의합니다.
+                    <li>
+                        <div class="tblEle vtType">
+                            <div class="ele"><strong class="tit">2.</strong></div>
+                            <div class="ele pl15">
+                                <strong class="tit">수집항목</strong><br>
+							(필수)아이디, 비밀번호, 성명, 연락처(전화번호, 휴대전화번호中 택1)<br>
+							(선택)이메일<br>
+							※ 만 14세 미만 아동의 개인정보 : HRD-Net 서비스는 만 14세 미만 아동의 개인정보를 수집ㆍ처리 하지 않습니다.
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tblEle vtType">
+                            <div class="ele"><strong class="tit">3.</strong></div>
+                            <div class="ele pl15">
+                                <strong class="tit">보유 및 이용기간</strong><br>
+							2년/회원 탈퇴 시(2년마다 재동의)<br>
+							※ 홈페이지 내 각 HRD-Net 서비스 이용 이력은 관계 법령에 따라 보유 기간이 다를 수 있으며 자세한 내용은 개인정보처리방침을 확인 바랍니다.<br>
+							개인정보 수집 및 이용에 관한 동의는 개인정보보호법 15조에 의거하여 거부할 수 있으며 선택정보를 입력하지 않더라도 기본적인 서비스 이용에 제한은 없습니다.
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
         <!-- //컨텐츠 영역 -->
     </div>
+    <!--// 개인정보 수집 및 이용약관 -->
 
+    <!-- 고유식별정보 처리 이용 약관 -->
+    <div class="layerfullWrap" data-fullpop="fullpop03" style="display:none">
+        <!-- 헤더영역 -->
+        <div class="layerHeader">
+            <div class="layerTitle">
+                <div class="inner">고유식별정보 처리 이용 약관</div>
+            </div>
+            <button type="button" class="layerCloseBtn">닫기</button>
+        </div>
+        <!-- //헤더영역 -->
 
-    <style>
-        .agrCont {
-            padding-top: 40px;
-        }
+        <!-- 컨텐츠 영역 -->
+        <section class="layerContent">
+            <div class="layerInner">
+                <ul class="agrCont">
+                    <li>
+                        <div class="tblEle vtType">
+                            <div class="ele">1</div>
+                            <div class="ele pl15">
+                                한국고용정보원은 직업능력개발훈련 행정처리를 위해 다음과 같이 고유식별정보를 수집·이용 합니다. 수집된 고유식별정보는 원칙적으로 처리목적이 달성되면 지체 없이 파기하며 해당 목적이외의 용도로 이용되지 않습니다.<br>
+							- 주민등록번호(내국인)<br>
+							- 외국인등록번호 (국내거주외국인)
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tblEle vtType">
+                            <div class="ele">2</div>
+                            <div class="ele pl15">
+                                근거법령 : 근로자직업능력 개발법 시행령 제52조의2 (민감정보 및 고유식별정보의 처리)
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- //컨텐츠 영역 -->
+    </div>
+    <!--// 고유식별정보 처리 이용 약관 -->
 
-        .agrCont>li {
-            position: relative;
-            font-size: 28px;
-            color: #727476;
-            /* text-indent:-28px; margin-left:28px; */
-        }
+    <!-- 제 3자 제공에 대한 안내 -->
+    <div class="layerfullWrap" data-fullpop="fullpop04" style="display:none">
+        <!-- 헤더영역 -->
+        <div class="layerHeader">
+            <div class="layerTitle">
+                <div class="inner">제 3자 제공에 대한 안내관</div>
+            </div>
+            <button type="button" class="layerCloseBtn">닫기</button>
+        </div>
+        <!-- //헤더영역 -->
 
-        .agrCont>li strong {
-            display: block;
-            font-size: 32px;
-            color: #222;
-        }
+        <!-- 컨텐츠 영역 -->
+        <section class="layerContent">
+            <div class="layerInner">
+                <ul class="agrCont">
+                    <li>
+                        HRD-Net 서비스는 수집된 개인정보를 관계 법령에 근거하여 제3자에게 제공하며 상세 내용은 개인정보처리방침을 통해 확인할 수 있습니다.<br>
+					※ 개인정보처리방침에 공개된 내용 외 제 3자 제공이 발생하는 경우 「개인정보 보호법」 제18조(개인정보의 목적 외 이용·제공 제한)에 근거하여 처리하겠습니다.<br>
+					HRD-Net는 이용자로부터 수집한 개인정보를 목적외 이용 및 제3자에게 제공하지 않습니다. 다만, 개인정보 보호법」제17조(개인정보의 제공) 및 제18조(개인정보의 이용·제공 제한)에 해당하는 다음의 경우에만 개인정보를 제3자에게 제공합니다.<br>
+					- 정보주체로부터 별도의 동의를 받은 경우<br>
+					- 법률에 특별한 규정이 있거나 법령상 의무를 준수하기 위하여 불가피한 경우<br>
+					- 정보주체 또는 그 법정대리인이 의사표시를 할 수 없는 상태에 있거나 주소불명 등으로 사전 동의를 받을 수 없는 경우로서 명백히 정보주체 또는 제3자의 급박한 생명, 신체, 재산의 이익을 위하여 필요하다고 인정되는 경우<br>
+					명백히 정보주체 또는 제3자의 급박한 생명, 신체, 재산의 이익을 위하여 필요하다고 인정되는 경우<br>
+					- 통계작성 및 학술연구 등의 목적을 위하여 필요한 경우로서 특정 개인을 알아볼 수 없는 형태로 개인정보를 제공하는 경우<br>
+					- 개인정보를 목적외의 용도로 이용하거나 이를 제3자에게 제공하지 아니하면 다른 법률에서 정하는 소관 업무를 수행할 수 없는 경우로서 보호위원회의 심의•의결을 거친 경우<br>
+					- 조약, 그 밖의 국제협정의 이행을 위하여 외국정부 또는 국제기구에 제공하기 위하여 필요한 경우<br>
+					- 범죄의 수사와 공소의 제기 및 유지를 위하여 필요한 경우<br>
+					- 법원의 재판업무 수행을 위하여 필요한 경우<br>
+					- 형(刑) 및 감호, 보호처분의 집행을 위하여 필요한 경우<br>
+					HRD-Net은 개인정보를 이용하거나 제공받고자 하는 기관에게 이용 목적, 이용 방법, 보유 기간, 이용 형태 등을 제한하거나, 개인정보의 안전성 확보를 위하여 필요한 구체적인 조치를 마련하도록 문서로 요청하며, 이용 및 제공 목적에 따라 최소한의 개인정보를 제공합니다.<br>
+					※ 개인정보처리방침에 공개된 내용 외 제 3자 제공이 발생하는 경우 「개인정보 보호법」 제18조(개인정보의 목적 외 이용·제공 제한)에 근거하여 처리하겠습니다.
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- //컨텐츠 영역 -->
+    </div>
+    <!--// 제 3자 제공에 대한 안내 -->
 
-        .agrCont>li+li {
-            padding-top: 31px;
-            margin-top: 33px;
-            border-top: 1px solid #e2e2e4;
-        }
+    <!-- 이메일•문자 수신에 대한 안내 -->
+    <div class="layerfullWrap" data-fullpop="fullpop05" style="display:none">
+        <!-- 헤더영역 -->
+        <div class="layerHeader">
+            <div class="layerTitle">
+                <div class="inner">이메일·문자 수신에 대한 안내</div>
+            </div>
+            <button type="button" class="layerCloseBtn">닫기</button>
+        </div>
+        <!-- //헤더영역 -->
 
-        .agrCont>li.ty1 {
-            padding-left: 30px;
-        }
-
-        .agrCont>li.ty1 .num {
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        .agrCont>li.ty1+li.ty1 .num {
-            top: 31px;
-        }
-
-
-        .layerfullWrap {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: 500;
-            width: 100%;
-            height: 100%;
-            padding: 130px 0 0 0;
-            background: #fff;
-        }
-
-        .layerHeader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 101;
-            width: 100%;
-            background: #fff;
-            text-align: center;
-            box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.2)
-        }
-
-        .layerHeader>.layerTitle .inner {
-            font-weight: 500;
-            font-size: 36px;
-            line-height: 108px;
-            color: #4e4f51;
-        }
-
-        .layerContent {
-            position: relative;
-            height: 100%;
-            min-height: 100%;
-            padding: 0 30px 60px 30px;
-            overflow: auto;
-        }
-
-        .layerContent>.layerInner {
-            height: calc(100% - 20px);
-            overflow: auto;
-        }
-
-        .layerCloseBtn {
-            position: absolute;
-            top: 36px;
-            right: 32px;
-            width: 39px;
-            height: 38px;
-            background: url(../new_images/common/btnCloseLayerPop.png) no-repeat;
-            background-size: 100%;
-            text-indent: -9999px;
-        }
-    </style>
+        <!-- 컨텐츠 영역 -->
+        <section class="layerContent">
+            <div class="layerInner">
+                <ul class="agrCont">
+                    <li>한국고용정보원은 회원 및 구직자를 대상으로 고용노동부에서 제공하는 소식 등 이메일 및 문자 서비스를 제공하고 있습니다.</li>
+                </ul>
+            </div>
+        </section>
+        <!-- //컨텐츠 영역 -->
+    </div>
+    <!--// 이메일•문자 수신에 대한 안내 -->
 
 
 
