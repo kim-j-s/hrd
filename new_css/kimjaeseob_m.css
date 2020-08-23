@@ -5,6 +5,7 @@
  * ============================== */
 
 .mt50 { margin-top:50px !important; }
+.mt60 { margin-top:60px !important; }
 .pl15 { padding-left:15px !important; }
 
  #subTopWrap.noneType {height:112px;}
@@ -21,7 +22,6 @@
 .tblEle > .ele .inpAlertMsg {padding-top:0;}
 .tblEle > .ele .ui_checkBox label {margin-right:0;}
 .tblEle.vtType > .ele {vertical-align:top;}
-
 
 button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-height:58px; height:60px; padding:0 10px;}
 
@@ -73,7 +73,6 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
 .layerCloseBtn {position:absolute; top:36px; right:32px; width:39px; height:38px; background:url(../new_images/common/btnCloseLayerPop.png) no-repeat; background-size:100%; text-indent:-9999px;}
 
 
-
 /* 이메일 입력 항목 */
 .emailInput {font-size:0;}
 .emailInput > .ele {display:inline-block; width:calc(50% - 23px);}
@@ -81,6 +80,7 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
 .emailInput > .ele.ty2 {display:block; width:100%; padding-top:20px;}
 .emailInput > .ele input[type="text"],
 .emailInput > .ele .selectBox  {width:100%;}
+
 
 /* 전화번호 입력 항목 */
 .phoneInput {display:flex;}
@@ -90,7 +90,6 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
 .phoneInput > .ele.ty3 {width:140px; width:calc(100% - 160);}
 .phoneInput > .ele input[type="text"],
 .phoneInput > .ele .selectBox  {width:100%;}
-
 
 
  /* ==============================
@@ -119,10 +118,6 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
 .singUpLink.ty2 {background-image:url(../new_images/common/iconCertPin.png); background-position:center top;}
 
 
-
-
-
-
 /* 회원가입 - 회원정보입력 */
 .signUpForm {border-top:2px solid #5b648a; text-align:center;}
 .signUpForm > .inner {display:inline-block; padding:30px 0;}
@@ -137,13 +132,6 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
 .signUpForm + .btnGroup {margin-top:60px;}
 
 
-
-
-
-
-
-
-
 /* 회원가입 - 가입완료 */
 .completeCont {margin:57px 30px 0 30px; padding:33px 0 0 0; text-align:center;/*  border:1px solid #e2e2e4; */ border-top:2px solid #5b648a;}
 .completeContTit > strong {font-weight:500; font-size:32px; color:#292a2d;}
@@ -156,7 +144,6 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
 .completeContReg + .btnGroup {margin-top:60px;}
 
 
-
 .singUpCompDetail {padding-top:42px;}
 .singUpCompList {border:1px solid #e2e2e4; font-size:0;}
 .singUpCompList > li {position:relative; padding:28px 0; text-align:left;}
@@ -164,7 +151,4 @@ button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-
 .singUpCompList > li + li {border-top:1px solid #e2e2e4;}
 .singUpCompList > li > .tit {display:inline-block; vertical-align:middle; width:170px; font-size:28px; color:#4e4f51; padding-left:45px; line-height:30px;}
 .singUpCompList > li > .detail {position:relative; display:inline-block; vertical-align:middle; width:calc(100% - 170px); padding:0 0 0 40px; line-height:30px; font-weight:500; font-size:28px; color:#292a2d;}
-
-
-
 

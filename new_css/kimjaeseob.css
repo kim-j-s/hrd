@@ -11,6 +11,7 @@ button.goLink, a.goLink {background-color:#fff;}
 .tblEle {display:table; width:100%;}
 .tblEle > .ele {display:table-cell; vertical-align:middle;}
 .tblEle > .ele.mini {text-align:right; width:10px; padding-left:10px; white-space:nowrap;}
+.tblEle > .ele.mini.verPC {display:table-cell !important;}
 .tblEle > .ele .inpAlertMsg {padding-top:0;}
 .inpArea + .tblEle {padding-top:10px;}
 
@@ -19,10 +20,10 @@ button.goLink, a.goLink {background-color:#fff;}
 .dotList > li:before {content:''; position:absolute; top:9px; left:0; width:3px; border-bottom:3px solid #767676; border-radius:50%;}
 
 
-
 /* ==============================
  * 회원가입
  * ============================== */
+.signUpFlowList > li .verPC {display:inline-block !important;}
 
 .mjArea {margin:60px 0 40px 0; border:1px solid #e2e2e4; border-top:2px solid #5b648a;}
 .mjArea > .inner {padding:40px 0; text-align:center; font-size:0;}
@@ -34,7 +35,5 @@ button.goLink, a.goLink {background-color:#fff;}
 .mjTy3 {background-image:url(../new_images/common/iconMj03.png)}
 
 
-/* ==============================
- * 회원가입
- * ============================== */
-
+/* 회원가입 - 가입완료 */
+.singUpCompList > li .verPC {display:inline-block !important;}

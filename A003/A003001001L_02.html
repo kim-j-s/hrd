@@ -16,18 +16,21 @@
     <link rel="shortcut icon" href="../new_images/common/favicon.ico">
     <link href="../new_css/lib/swiper.min.css" rel="stylesheet" />
     <link href="../new_css/reset.css" rel="stylesheet" />
-    <!-- <link href="../new_css/layout.css" rel="stylesheet" />
+    <link href="../new_css/layout.css" rel="stylesheet" />
     <link href="../new_css/contents.css" rel="stylesheet" />
-    	<link href="../new_css/kimjaeseob.css" rel="stylesheet" /> -->
+    <link href="../new_css/kimjaeseob.css" rel="stylesheet" />
     <link href="../new_css/main.css" rel="stylesheet" />
 
-    <link href="../new_css/layout_m.css" rel="stylesheet" />
-    <link href="../new_css/contents_m.css" rel="stylesheet" />
-    <link href="../new_css/kimjaeseob_m.css" rel="stylesheet" />
+    <!-- <link href="../new_css/layout_m.css" rel="stylesheet" />
+	<link href="../new_css/contents_m.css" rel="stylesheet" />
+	<link href="../new_css/kimjaeseob_m.css" rel="stylesheet" /> -->
 
     <script src="../new_js/lib/jquery-2.1.1.js"></script>
     <script src="../new_js/lib/swiper.min.js"></script>
     <script src="../new_js/ui.js"></script>
+
+    <!-- <script src="../new_js/kimjaeseob_m.js"></script> -->
+
 </head>
 
 <body>
@@ -442,28 +445,6 @@
                         <button type="button" class="btnType1 primary">확인</button>
                     </div>
 
-
-                    <script>
-                        $(function() {
-                            $('.popactive').click(function() {
-                                var data = $(this).data('popactive');
-                                $('body').css('position', 'fixed');
-                                $('body').css('height', '100%');
-                                $('.layerfullWrap').css('display', 'none');
-                                $('[data-fullpop="' + data + '"]').css('display', 'block');
-                            });
-
-                            $('.layerCloseBtn').click(function() {
-                                $('body').removeAttr('style');
-                                $(this).closest('.layerfullWrap').css('display', 'none');
-                            });
-
-
-
-                        });
-                    </script>
-
-
                     <div class="moInner verM">
                         <div class="termsDiv">
                             <div class="contTitEle verM">
@@ -554,7 +535,7 @@
                         <button type="button" class="btnType1">동의하지 않음</button>
                         <button type="button" class="btnType1 primary">동의하고 계속</button>
                     </div>
-                    <div class="moInner mt50">
+                    <div class="moInner mt50 verM">
                         <div class="btnGroup">
                             <button type="button" class="btnType2 etc w100p">HRD-Net 주요약관 전체 보기</button>
                         </div>
@@ -821,8 +802,6 @@
         <!-- //컨텐츠 영역 -->
     </div>
     <!--// 이메일•문자 수신에 대한 안내 -->
-
-
 
 </body>
 
