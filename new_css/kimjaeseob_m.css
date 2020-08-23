@@ -4,20 +4,31 @@
  * common
  * ============================== */
 
+.mt50 { margin-top:50px !important; }
+
  #subTopWrap.noneType {height:112px;}
  #subTopWrap.noneType .subTopArea {border-bottom:0;}
 
 .moInner {padding:0 30px;}
 .moInner + .btnGroup {margin-top:50px;}
+.moInner + .moInner {margin-top:60px; border-top:4px solid #e7e9f0;}
+.moInner + .moInner > .contTitEle {margin-top:49px;}
 
 .tblEle {display:table; width:100%;}
 .tblEle > .ele {display:table-cell; vertical-align:middle;}
 .tblEle > .ele.mini {text-align:right; width:10px; padding-left:10px; white-space:nowrap;}
 .tblEle > .ele .inpAlertMsg {padding-top:0;}
+.tblEle > .ele .ui_checkBox label {margin-right:0;}
+
+button.btnType2.small, a.btnType2.small { min-width:140px; font-size:24px; line-height:58px; height:60px; padding:0 10px;}
 
 .dotList {}
 .dotList > li {position:relative; padding-left:10px; font-size:22px; line-height:30px; color:#767676; text-align:left;}
 .dotList > li:before {content:''; position:absolute; top:13px; left:0; width:3px; border-bottom:3px solid #767676; border-radius:50%;}
+
+.agrList {border-top:2px solid #4f71a2;}
+.agrList > li {padding:30px 0; border-bottom:1px solid #e2e2e4;}
+.agrList + .boxArea {margin-top:60px;}
 
 .inpAlertMsg {position:relative; margin-top:14px; padding-left:10px; font-size:22px; line-height:30px; color:#767676;}
 .inpAlertMsg:before {content:''; position:absolute; top:12px; left:0; width:3px; border-bottom:3px solid #767676; border-radius:50%;}
@@ -34,6 +45,10 @@
 .infoTxtEle.etc {margin-top:10px; padding-top:30px; padding:30px 0 35px 0; border-top:1px solid #e2e2e4; border-bottom:1px solid #e2e2e4;}
 .infoTxtEle > dt {font-weight:500; font-size:32px; color:#222;}
 .infoTxtEle > dd {padding-top:24px; font-size:14px; color:#767676;}
+
+.contTitEle {margin-top:42px; padding-bottom:21px;}
+.contTitEle .tit {display:inline-block; font-size:34px; color:#292a2d;}
+.contTitEle .subTxt {float:right; margin-top:14px; font-size:22px; color:#727476;}
 
 
 
@@ -96,6 +111,7 @@
 .signUpFormList > li .inpArea {padding-top:8px;}
 .signUpFormList > li .inpArea input[type="text"], 
 .signUpFormList > li .inpArea input[type="password"] {width:100%;}
+.signUpForm + .tableTitleArea {}
 .signUpForm + .btnGroup {margin-top:60px;}
 
 
